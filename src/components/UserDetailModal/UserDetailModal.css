@@ -1,0 +1,44 @@
+.udm-card {
+  width:100%; max-width:560px; max-height:90vh;
+  overflow-y:auto; padding:32px; position:relative;
+  animation:bounce-in .3s ease;
+}
+.udm-header  { display:flex; gap:16px; align-items:flex-start; margin-bottom:24px; }
+.udm-avatar  {
+  font-size:44px; width:70px; height:70px; border-radius:50%;
+  background:rgba(124,58,237,.15); border:2px solid rgba(124,58,237,.4);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.udm-meta    { flex:1; }
+.udm-name-row { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+.udm-name    { font-family:var(--font-display); font-size:22px; font-weight:800; }
+.udm-tier    { font-weight:700; font-size:14px; margin-bottom:8px; }
+.udm-bio     { color:var(--text-secondary); font-size:14px; line-height:1.6; }
+
+.udm-section       { margin-top:20px; }
+.udm-section-title { font-family:var(--font-display); font-size:15px; font-weight:700; margin-bottom:10px; }
+.udm-chips         { display:flex; flex-wrap:wrap; gap:8px; }
+
+.udm-footer {
+  display:flex; gap:10px; margin-top:28px; padding-top:20px;
+  border-top:1px solid var(--border); flex-wrap:wrap;
+}
+.udm-chat-btn  { flex:1; }
+.udm-danger-btn { border-color:rgba(239,68,68,.3)!important; color:#f87171!important; }
+.udm-danger-btn:hover { background:rgba(239,68,68,.08)!important; }
+
+/* ════════════════════════════════════════════════════════════════
+   USER DETAIL MODAL — RESPONSIVE
+   ════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 600px) {
+  .udm-card { padding: 24px 18px; border-radius: 20px; }
+  .udm-header { flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+  .udm-name-row { justify-content: center; flex-wrap: wrap; }
+  .udm-avatar { width: 80px; height: 80px; font-size: 40px; }
+  .udm-name   { font-size: 20px; }
+  .udm-footer { flex-direction: column; }
+  .udm-footer .btn-primary,
+  .udm-footer .btn-ghost { width: 100%; text-align: center; }
+  .udm-chat-btn { flex: none; }
+}
