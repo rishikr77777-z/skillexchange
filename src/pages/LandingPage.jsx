@@ -143,13 +143,13 @@ export default function LandingPage({ navigate }) {
               </div>
             ))}
 
-            {/* CENTER — Logo placeholder */}
+            {/* CENTER — Logo */}
             <div className="logo-center">
               <div className="logo-glow" />
               <div className="logo-ring logo-ring-1" />
               <div className="logo-ring logo-ring-2" />
               <div className="logo-core">
-                <div className="logo-placeholder-text">YOUR<br/>LOGO</div>
+                <img src="/skill-exchange-logo.svg" alt="Skill Exchange Logo" className="logo-img" />
                 <div className="logo-sub">Skill Exchange</div>
               </div>
             </div>
