@@ -314,6 +314,16 @@
     inset 0 0 40px rgba(124,58,237,0.2),
     0 0 60px rgba(124,58,237,0.3);
 }
+
+/* Logo image styling */
+.logo-img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+  animation: float-gentle 3s ease-in-out infinite;
+}
+
 .logo-placeholder-text {
   font-family: var(--font-display);
   font-weight: 800;
@@ -547,6 +557,7 @@
   .ring-middle { width: 230px; height: 230px; }
   .logo-center { width: 160px; height: 160px; }
   .logo-core   { width: 160px; height: 160px; }
+  .logo-img { width: 100px; height: 100px; }
   .logo-placeholder-text { font-size: 18px; }
   .exchange-card { padding: 8px 12px; }
   .ex-card-1 { bottom: 20px; left: -10px; }
@@ -591,6 +602,7 @@
   .ring-middle { width: 180px; height: 180px; }
   .logo-center { width: 120px; height: 120px; }
   .logo-core   { width: 120px; height: 120px; }
+  .logo-img { width: 80px; height: 80px; }
   .logo-placeholder-text { font-size: 14px; padding: 6px 8px; }
   .logo-sub    { font-size: 9px; }
   .orbit-item  { width: 280px; height: 280px; }
@@ -623,5 +635,6 @@
   .ring-middle { width: 150px; height: 150px; }
   .logo-center { width: 100px; height: 100px; }
   .logo-core   { width: 100px; height: 100px; }
+  .logo-img { width: 70px; height: 70px; }
   .orbit-item  { width: 240px; height: 240px; }
 }
